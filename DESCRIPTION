@@ -1,0 +1,26 @@
+Package: FW
+Title: Run Finlay-Wilkinson Test
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Nick",
+           family = "Dietz",
+           role = c("aut", "cre"),
+           email = "nadietz@gmail.com",
+           comment = c(ORCID = "https://orcid.org/0000-0001-7536-8166"))
+Description: This package contains the function fw_test, which runs a Finlay-Wilkinson test to test for GxE. It does this by testing the regression coefficient of GE ~ Location mean line against a coefficient of 1.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    tibble,
+    tidyr,
+    purrr,
+    ggplot2,
+    magrittr,
+    dplyr,
+    stats,
+    plyr,
+    gtable,
+    grid
