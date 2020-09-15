@@ -30,7 +30,7 @@ devtools::install_github("nad7wf/FW")
 
 ## Example
 
-```{r example}
+```{r example, message = FALSE}
 library(tidyverse)
 library(FW)
 
@@ -50,10 +50,4 @@ loc <- plyr::ddply(ge, "Year", function (Year_group) {
     dplyr::select(Loc, Year, Loc_mean)
 
 results <- fw_test(ge, loc, 6)
-```
-
-You can plot the saved gtable using the _grid_ package:
-
-```{r pressure, echo = FALSE}
-grid::grid.draw(results[[2]])
 ```
